@@ -4,66 +4,66 @@
     <title>Citizen Research Form</title>
 	  <meta charset="utf-8"></meta>
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	  <link rel="stylesheet" href="https://mateusbrilhante.github.io/PVH-Forms/MBMCSS.css" />
+	  <link rel="stylesheet" href="https://mateusbrilhante.github.io/PVH-Forms/general.css" />
   </head>
-  <h1 id="title">Citizen Research Form</h1>
+  <h1 id="title">A vida em Porto Velho</h1>
   <body>
-    <p class="subtitle" id="description">Would you like to share your thoughts about the city you live? Don't worry, it's not going to take long.</p>
+    <p class="subtitle" id="description">Você gostaria de participar de uma pesquisa sobre a vida em Porto Velho?</p>
     <form id="survey-form">
      
-    <fieldset class="id"><p class="pd1" >Identification</p><img class="idimg" src="https://uploaddeimagens.com.br/images/004/063/369/full/idicon.png?1665977675" alt="identification icon"/>
+    <fieldset class="id"><p class="pd1" >Identificação</p><img class="idimg" src="idicon.png" alt="identification icon"/>
     </fieldset>
 
     <fieldset class="ident">
-    <label id="name-label" for="name" >Enter Your Full Name<input class="pinfo" id="name" type="text" placeholder="Type A if you wish to be anonymous" required /></label>
-    <label id="email-label" for="email">Enter Your Email<input class="pinfo" id="email" type="email" placeholder="a@gmail.com" required /></label>
-    <label id="number-label" for="number">Enter Your Age<input class="pinfo" id="number" type="number" placeholder="Come on.. at least this one" required min="4" max="120" /></label>
+    <label id="name-label" for="name" >Nome completo<input name="name" class="pinfo" id="name" type="text" placeholder="Digite A se quiser anônimo" required /></label>
+    <label id="email-label" for="email">Email<input name="email" class="pinfo" id="email" type="email" placeholder="a@a" required /></label>
+    <label id="number-label" for="number">Idade<input name="age" class="pinfo" id="number" type="number" placeholder="Pelo menos a idade" required min="4" max="120" /></label>
     </fieldset>
 
-<fieldset class="id"><p class="pd1" >Questions</p><img class="questimg" src="https://uploaddeimagens.com.br/images/004/064/036/full/questionsicon.png?1666028903" alt="questions icon"/>
+<fieldset class="id"><p class="pd1" >Perguntas</p><img class="questimg" src="questionsicon.png" alt="questions icon"/>
     </fieldset>
 
     <fieldset class="ident">
-    <label for="select" id="select"  >How long have you been in your city?
-    <select class="pinfo" id="dropdown">
-     <option value="">(select one)</option>
-     <option value="1">Recently moved</option>
-     <option value="2">For a few months</option>
-    <option value="3">For a few years</options>
-    <option value="4">Most of my life</option>
+    <label for="select" id="select"  >Há quanto tempo mora na cidade?
+    <select name="mora" class="pinfo" id="dropdown">
+     <option selected hidden value="">(selecione uma opção)</option>
+     <option value="M1">Mudei recentemente</option>
+     <option value="M2">Há alguns meses</option>
+    <option value="M3">Há alguns anos</options>
+    <option value="M4">Boa parte da minha vida</option>
     </select>
   
     </label>
-    <p class="quest">Do you like it?</p>
-    <label for="yes" ><input value="yes" type="radio" id="yes" name="like"  />Yes</label>
-    <label for="no"><input value="no" type="radio" id="no" name="like" />No</label>
+    <p class="quest">Você gosta da cidade?</p>
+    <label for="yes" ><input value="gsim" type="radio" id="yes" name="like"  />Sim</label>
+    <label for="no"><input value="gnao" type="radio" id="no" name="like" />Não</label>
 
-    <p class="quest">Are you sure about that? Memes aside, there is no need to hold back. Feel free!</p>
-    <label for="sure"><input type="checkbox" id="sure" value="imsure" required>Ok, got it.</label>
+    <p class="quest">Você tem certeza? Não precisa se preocupar com nada! Só queremos saber como se sente.</p>
+    <label for="sure"><input type="checkbox" id="sure" value="imsure" required>Tá bom, entendi.</label>
 
-    <p class="quest">Then.. which aspects of the city (and your life) made you think that way?</p>
-    <label for="beauty"><input type="checkbox" id="beauty" value="beauty" name="beauty"/>Beauty</label>
-    <label for="Environment"><input id="environment" name="environment" value="environment" type="checkbox"/>Environment</label>
-    <label for="size"><input id="size" type="checkbox" name="size" value="size"/>Size</label>
-    <label for="traffic"><input type="checkbox" id="traffic" name="traffic" value="traffic"/>Traffic</label>
-    <label for="features"><input type="checkbox" id="features" name="features" value="features" />Features</label>
-    <label for="safety"><input type="checkbox" id="safety" name="safety" value="safety" />Safety</label>
-    <label for="relationships"><input type="checkbox" id="relationships" name="relationships" value="relationships"/>Relationships</label>
+    <p class="quest">Então.. quais aspectos da cidade (e da sua vida) fazem você pensar desse jeito?</p>
+    <label for="beauty"><input type="checkbox" id="beauty" value="beleza" name="beauty"/>Beleza</label>
+    <label for="Environment"><input id="environment" name="environment" value="Ambiente" type="checkbox"/>Ambiente</label>
+    <label for="size"><input id="size" type="checkbox" name="size" value="tamanho"/>Tamanho</label>
+    <label for="traffic"><input type="checkbox" id="traffic" name="traffic" value="trafego"/>Tráfego</label>
+    <label for="features"><input type="checkbox" id="features" name="features" value="recursos" />Recursos</label>
+    <label for="safety"><input type="checkbox" id="safety" name="safety" value="seguranca" />Segurança</label>
+    <label for="relationships"><input type="checkbox" id="relationships" name="relationships" value="relacoes"/>Relações</label>
     </fieldset>
 
-<fieldset class="id"><p class="pd1" >Thougths</p><img class="textimg" src="https://uploaddeimagens.com.br/images/004/064/079/full/texticon.png?1666030123" alt="book icon"/>
+<fieldset class="id"><p class="pd1" >Opinião</p><img class="textimg" src="texticon.png" alt="book icon"/>
     </fieldset>
     <fieldset class="ident">
-    <label for="favs">Is there anything else you would like to say? Favorites and dislikes?<textarea id="thoughts" name="thoughts" placeholder="I like the food, I miss locations with open internet, parks.."></textarea></label>
+    <label for="favs">Gostaria de dizer mais alguma coisa? Coisas favoritas ou que te incomodam?<textarea id="thoughts" name="texto" placeholder="Eu gosto da comida, sinto falta de lugares com internet, bosques.."></textarea></label>
 
-    <label for="pic"> And finally, could you share one or more photos about these points? You know, a picture is worth a thousand words! <input id="pic" type="file" name="file" /></label>
+    <label for="pic"> E por último, o que acha de compartilhar algo sobre um dos pontos citados? Uma imagem vale mais que mil palavras! <input id="pic" type="file" name="file" /></label>
     </fieldset>
-    <p class="subtitle">Thank you very much</p>
+    <p class="subtitle">Muito obrigado</p>
    
     <input type="submit" id="submit" value="Submit"/>
     </form>
     </body>
     <footer class="subtitle"> 
-      <p>For a better future</p>
+      <p>Por um futuro melhor</p>
       </footer>
 </html>
