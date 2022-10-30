@@ -125,3 +125,7 @@ input[type="submit"]{
   box-shadow: 0 0 11px 0 white;
   margin: 20px auto;
 }
+
+footer {
+  padding-bottom: 10px;
+}
