@@ -9,7 +9,17 @@ body {
   background-color: hsl(0,0%,20%);
   color: hsl(120,100%,100%);
   font-family: Arial;
-  
+}
+
+.dark-mode {
+  background-color: white;
+  color: black;
+}
+
+.dmode {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 h1, .subtitle, title, .id {
