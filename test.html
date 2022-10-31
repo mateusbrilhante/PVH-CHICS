@@ -1,4 +1,5 @@
-<form 
+<form
+  id="myform"
   method="POST" 
   action="https://script.google.com/macros/s/AKfycbxm_uZl-3Ez2ym6YUyr-AUVAfiGbUr5CbO_7Q8GUAD59J-Qp_Ma_vZQ6yJy41AEHgqN/exec"
 >
@@ -7,4 +8,22 @@
   <input name="meh" type="checkbox" required placeholder="A">
   <input type="file" name="file" required>
   <button type="submit">Send</button>
+  
+  <script
+          window.addEventListener("load", function() {
+  const form = document.getElementById('my-form');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Success!");
+    })
+  });
+});
+  </script>
 </form>
