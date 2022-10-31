@@ -113,16 +113,27 @@ function myFunction() {
     <label for="no"><input value="Nao" type="radio" id="no" name="Gosta" />Não</label>
 
      <p class="quest">Então.. quais aspectos da cidade (e da sua vida) fazem você pensar desse jeito?</p>
-    <label for="Environment"><input id="environment" name="Ambiente&Beleza" value="Sim" type="checkbox"/>Ambiente e beleza</label>
-    <label for="size"><input id="size" type="checkbox" name="Tamanho&Tráfego" value="Sim" />Tamanho e tráfego</label>
-    <label for="features"><input type="checkbox" id="features" name="Recursos&RelaçõesP" value="Sim"  />Recursos e relações pessoais</label>
-    <label for="safety"><input type="checkbox" id="safety" name="Segurança" value="Sim" />Segurança</label>
+    <label for="Environment"><input id="environment" name="Ambiente&Beleza" value="Motivo" type="checkbox"/>Ambiente e beleza</label>
+    <label for="size"><input id="size" type="checkbox" name="Tamanho&Tráfego" value="Motivo" />Tamanho e tráfego</label>
+    <label for="features"><input type="checkbox" id="features" name="Recursos&RelaçõesP" value="Motivo"  />Recursos e relações pessoais</label>
+    <label for="saúdep"><input type="checkbox" id="saúdep" name="SaúdePub" value="Motivo" />Saúde pública</label>
+    <label for="safety"><input type="checkbox" id="safety" name="Segurança" value="Motivo" />Segurança</label>
+
+    <p class="quest">Qual seria o pior aspecto?</p>
+    <select name="PiorAspecto" class="pinfo" id="pioraspecto">
+   	 <option selected hidden value="">(selecione uma opção)</option>
+    	<option value="PrédiosPub">Ambiente e beleza</option>
+    	<option value="InfraestTransporte">Tamanho e tráfego</option>
+    	<option value="ServiçoPub">Recursos e relações pessoais</options>
+    	<option value="SaúdePub">Saúde pública</option>
+    	<option value="Segurança">Segurança</option>
+    </select>
 	    
     <label class="quest" for="favs">Gostaria de dizer mais alguma coisa? Coisas favoritas ou que te incomodam?<textarea id="thoughts" name="Texto" placeholder="Eu gosto da comida, sinto falta de lugares com internet, bosques.."></textarea></label>
     </fieldset>
     <p class="subtitle">Muito obrigado</p>
    
-    <input type="submit" id="submit" value="Enviar"/>
+    <input class="boton" type="submit" id="submit" value="Enviar"/>
     </form>
     </body>
     <footer class="subtitle"> 
