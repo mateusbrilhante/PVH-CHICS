@@ -29,9 +29,9 @@ function myFunction() {
     </fieldset>
 
     <fieldset class="ident">
-    <label id="name-label" for="name" >Nome completo<input name="name" class="pinfo" id="name" type="text" placeholder="Digite A se quiser anônimo" required /></label>
-    <label id="email-label" for="email">Email<input name="email" class="pinfo" id="email" type="email" placeholder="a@a" required /></label>
-    <label id="number-label" for="number">Idade<input name="age" class="pinfo" id="number" type="number" placeholder="Pelo menos a idade" required min="4" max="120" /></label>
+    <label id="name-label" for="name" >Nome completo<input name="Nome" class="pinfo" id="name" type="text" placeholder="Digite A se quiser anônimo" required /></label>
+    <label id="email-label" for="email">Email<input name="Email" class="pinfo" id="email" type="email" placeholder="a@a" required /></label>
+    <label id="number-label" for="number">Idade<input name="Idade" class="pinfo" id="number" type="number" placeholder="Pelo menos a idade" required min="4" max="120" /></label>
     </fieldset>
 
 <fieldset class="id"><p class="pd1" >Perguntas</p><img class="questimg" src="questionsicon.png" alt="questions icon"/>
@@ -39,25 +39,25 @@ function myFunction() {
 
     <fieldset class="ident">
     <label for="select" id="select"  >Há quanto tempo mora na cidade?
-    <select name="mora" class="pinfo" id="dropdown">
+    <select name="Morada" class="pinfo" id="dropdown">
      <option selected hidden value="">(selecione uma opção)</option>
-     <option value="M1">Mudei recentemente</option>
-     <option value="M2">Há alguns meses</option>
-    <option value="M3">Há alguns anos</options>
-    <option value="M4">Boa parte da minha vida</option>
+     <option value="Recente">Mudei recentemente</option>
+     <option value="Meses">Há alguns meses</option>
+    <option value="Anos">Há alguns anos</options>
+    <option value="Vida">Boa parte da minha vida</option>
     </select>
   
     </label>
     <p class="quest">Você gosta da cidade?</p>
-    <label for="yes" ><input value="gsim" type="radio" id="yes" name="like"  />Sim</label>
-    <label for="no"><input value="gnao" type="radio" id="no" name="like" />Não</label>
+    <label for="yes" ><input value="Sim" type="radio" id="yes" name="Gostar"  />Sim</label>
+    <label for="no"><input value="Nao" type="radio" id="no" name="Gostar" />Não</label>
 
     <p class="quest">Você tem certeza? Não precisa se preocupar com nada! Só queremos saber como se sente.</p>
-    <label for="sure"><input type="checkbox" id="sure" value="imsure" required>Tá bom, entendi.</label>
+    <label for="sure"><input type="checkbox" id="sure" name="Certeza" value="Sim" required>Tá bom, entendi.</label>
 
     <p class="quest">Então.. quais aspectos da cidade (e da sua vida) fazem você pensar desse jeito?</p>
-    <label for="beauty"><input type="checkbox" id="beauty" value="beleza" name="beauty"/>Beleza</label>
-    <label for="Environment"><input id="environment" name="environment" value="Ambiente" type="checkbox"/>Ambiente</label>
+    <label for="beauty"><input type="checkbox" id="beauty" value="beleza" name="Beleza"/>Beleza</label>
+    <label for="Environment"><input id="environment" name="Ambiente" checked="Sim" value="Ambiente" type="checkbox"/>Ambiente</label>
     <label for="size"><input id="size" type="checkbox" name="size" value="tamanho"/>Tamanho</label>
     <label for="traffic"><input type="checkbox" id="traffic" name="traffic" value="trafego"/>Tráfego</label>
     <label for="features"><input type="checkbox" id="features" name="features" value="recursos" />Recursos</label>
