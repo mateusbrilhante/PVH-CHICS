@@ -1,4 +1,4 @@
-.dark-mode {
+.lightmode {
   background-color: white;
   color: black;
 }
@@ -132,10 +132,13 @@ input[type="file"] {
 
 input[type="submit"]{
   display: block;
-  background: linear-gradient(hsl(0,0%,30%)0%, hsl(0,0%,100%)90%,hsl(0,0%,30%));
   width: 35%;
-  box-shadow: 0 0 11px 0 white;
   margin: 20px auto;
+}
+
+.boton {
+  background: linear-gradient(hsl(0,0%,30%)0%, hsl(0,0%,100%)90%,hsl(0,0%,30%));
+  box-shadow: 0 0 11px 0 white;
 }
 
 footer {
