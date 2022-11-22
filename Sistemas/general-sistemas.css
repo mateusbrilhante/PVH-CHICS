@@ -4,6 +4,12 @@
   }
 }
 
+@media only screen and (max-width: 375px){
+h1, h2 {
+    font-size: 40px;
+}
+}
+
 body {
   background: linear-gradient(45deg,white, white,  rgba(120,120,120, 0.5));
   margin: 0;
