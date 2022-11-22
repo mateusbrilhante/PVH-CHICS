@@ -32,7 +32,7 @@ overflow: hidden;
 }
 
 h1 {
-  font-size: max(2vw, 1.2em);
+  font-size: max(1vw, 1.2em);
   left: 65px;
   position: absolute;
 
