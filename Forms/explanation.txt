@@ -1,0 +1,3 @@
+It's a survey created to gather information about the human aspects from the city Porto Velho.
+
+The objective is to analyze the results and compare with other cities. 
