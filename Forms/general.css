@@ -1,6 +1,6 @@
 .lightmode {
-  background-color: white;
-  color: black;
+  background-color: hsl(0,0%,20%);
+  color: hsl(120,100%,100%);
 }
 
 .dmode {
@@ -17,8 +17,8 @@ body {
   width: 85%;
   height: 100vh;
   margin: 20px auto;
-  background-color: hsl(0,0%,20%);
-  color: hsl(120,100%,100%);
+  background-color: white;
+  color: black;
   font-family: Arial;
 }
 
