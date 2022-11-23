@@ -104,8 +104,7 @@ h2 {
  font-size: 12px; 
  }
 .img-sistemas {
-  width: 100%;
-  max-width: 300px;
+  max-width: 100%;
   height: auto;
 }
 }
