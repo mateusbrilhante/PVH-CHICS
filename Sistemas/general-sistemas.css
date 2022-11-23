@@ -4,8 +4,6 @@
   }
 }
 
-
-
 body {
   background: linear-gradient(45deg,white, white,  rgba(120,120,120, 0.5));
   margin: 0;
@@ -15,8 +13,7 @@ body {
   display: fixed;
   bottom: 0;
 padding-bottom: 0;
-margin-bottom: 0;
- padding-left: 3vw;
+margin-bottom: 0; 
 }
 
 header {
@@ -35,7 +32,7 @@ overflow: hidden;
 }
 
 h1 {
-  font-size: max(1vw, 1.2em);
+  font-size: max(2vw, 1.2em);
   left: 65px;
   position: absolute;
 
@@ -74,16 +71,35 @@ nav > ul > li > a {
 }
 
 main {
-  padding-top: 80px;
+  padding-top: 10px;
   padding-left: 3vw;
+  padding-right: 3vw;
 }
 
 h2 {
   padding-top: 55px;
 }
 
+.texto {
+  text-indent: 2em;
+}
+.no-indent {
+  text-indent: 0 !important;
+}
+
+.links {
+  color: black;
+}
+
+.img-sistemas {
+  margin: 0;
+  padding: 0;
+}
+
+
 
 
 @media (max-width: 1024px) {
 .titulo, .nav-link{font-size: 12px; }
+
 }
