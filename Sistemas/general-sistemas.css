@@ -83,6 +83,10 @@ h2 {
   text-indent: 0;
 }
 
+#video {
+  width: 100%;
+}
+
 .links {
   color: black;
 }
