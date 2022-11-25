@@ -83,10 +83,6 @@ h2 {
   text-indent: 0;
 }
 
-#video {
-  width: 100%;
-}
-
 .links {
   color: black;
 }
@@ -126,5 +122,8 @@ footer {
 .img-sistemas {
   max-width: 100%;
   height: auto;
+}
+ #video {
+  width: 100%;
 }
 }
