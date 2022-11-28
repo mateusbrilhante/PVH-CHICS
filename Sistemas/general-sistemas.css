@@ -123,7 +123,7 @@ html, body {
 }
 
 @media (max-width: 1024px) {
-.nav-link{font-size: 4vh; }
+.nav-link{font-size: 2vh; }
 
 .img-sistemas {
   max-width: 100%;
