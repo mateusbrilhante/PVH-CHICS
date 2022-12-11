@@ -16,21 +16,12 @@ https://github.com/levinunnink/html-form-to-google-sheet about javascript. Your 
 <button class="dmode boton" onclick="myFunction()">☾</button>
 
 <script>
-window.addEventListener("load", function() {
-  const form = document.getElementById('survey-form');
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
-    const data = new FormData(form);
-    const action = e.target.action;
-    fetch(action, {
-      method: 'POST',
-      body: data,
-    })
-    .then(() => {
-      alert("Success!");
-    })
-  });
-});
+	function myFunction() {
+   var element = document.body;
+   element.classList.toggle("lightmode");
+}
+	
+
 </script>
 
   <h1 id="title">Cidade Humana</h1>
@@ -42,9 +33,22 @@ window.addEventListener("load", function() {
     <form id="survey-form" method="POST" action="https://script.google.com/macros/s/AKfycbxm_uZl-3Ez2ym6YUyr-AUVAfiGbUr5CbO_7Q8GUAD59J-Qp_Ma_vZQ6yJy41AEHgqN/exec" >
 	    
 <script>
-	function enviadoCom() {
-		window.open('https://google.com', '_self');
-	}
+	window.addEventListener("load", function() {
+  const form = document.getElementById('survey-form');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      window.open('https://www.google.com/', '_blank');
+
+    })
+  });
+});
 </script>
      
     <fieldset class="id"><p class="pd1" >Identificação</p><img class="idimg" src="idicon.png" alt="identification icon"/>
