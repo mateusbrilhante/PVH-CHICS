@@ -16,10 +16,21 @@ https://github.com/levinunnink/html-form-to-google-sheet about javascript. Your 
 <button class="dmode boton" onclick="myFunction()">☾</button>
 
 <script>
-function myFunction() {
-   var element = document.body;
-   element.classList.toggle("lightmode");
-}
+window.addEventListener("load", function() {
+  const form = document.getElementById('survey-form');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Success!");
+    })
+  });
+});
 </script>
 
   <h1 id="title">Cidade Humana</h1>
@@ -28,7 +39,7 @@ function myFunction() {
 	  
 	  
 	  
-    <form id="survey-form" method="POST" action="https://script.google.com/macros/s/AKfycbxm_uZl-3Ez2ym6YUyr-AUVAfiGbUr5CbO_7Q8GUAD59J-Qp_Ma_vZQ6yJy41AEHgqN/exec" onsubmit="enviadoCom()">
+    <form id="survey-form" method="POST" action="https://script.google.com/macros/s/AKfycbxm_uZl-3Ez2ym6YUyr-AUVAfiGbUr5CbO_7Q8GUAD59J-Qp_Ma_vZQ6yJy41AEHgqN/exec" >
 	    
 <script>
 	function enviadoCom() {
