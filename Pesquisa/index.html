@@ -1,3 +1,7 @@
+<!-- 
+None of this would be possible without the teachings of https://www.freecodecamp.org/learn about HTML/CSS and 
+https://github.com/levinunnink/html-form-to-google-sheet about javascript. Your help was really appreciated. Thank you.
+-->
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
@@ -28,17 +32,17 @@ function myFunction() {
 	    
 <script>
 	window.addEventListener("load", function() {
- 		 const form = document.getElementById('survey-form');
+ 		  const form = document.getElementById('survey-form');
 		  form.addEventListener("submit", function(e) {
- 		   e.preventDefault();
+		  e.preventDefault();
   		  const data = new FormData(form);
   		  const action = e.target.action;
-   		 fetch(action, {
+   		  fetch(action, {
    			method: 'POST',
     		  	body: data, 
 		 })
    			 .then(() => {
-     			 	alert("Enviado com sucesso!");
+     			 	alert("Enviado com sucesso! Já pode fechar.");
     			})
   		});
 	});
@@ -227,7 +231,15 @@ function myFunction() {
     </fieldset>
     <p class="subtitle">Muito obrigado</p>
    
-    <input class="boton" type="submit" id="submit" value="Enviar"/>
+    <input class="boton" type="submit" id="submit" value="Enviar" onsubmit="closeWindow()"/>
+
+<script>
+
+function closeWindow(){
+setTimeout("window.close()",5000)
+}
+	
+</script>
     </form>
     </body>
     <footer class="subtitle"> 
