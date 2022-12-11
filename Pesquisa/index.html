@@ -43,7 +43,9 @@ function myFunction() {
 		 })
    			 .then(() => {
      			 	alert("Enviado com sucesso! Já pode fechar.");
-			        window.close();
+			        if(userInput == true){
+				close();
+			}
     			})
   		});
 	});
