@@ -28,26 +28,12 @@ function myFunction() {
 	  
 	  
 	  
-    <form id="survey-form" method="POST" action="https://script.google.com/macros/s/AKfycbxm_uZl-3Ez2ym6YUyr-AUVAfiGbUr5CbO_7Q8GUAD59J-Qp_Ma_vZQ6yJy41AEHgqN/exec">
+    <form id="survey-form" method="POST" action="https://script.google.com/macros/s/AKfycbxm_uZl-3Ez2ym6YUyr-AUVAfiGbUr5CbO_7Q8GUAD59J-Qp_Ma_vZQ6yJy41AEHgqN/exec" onsubmit="enviadoCom()">
 	    
 <script>
-	window.addEventListener("load", function() {
- 		  const form = document.getElementById('survey-form');
-		  form.addEventListener("submit", function(e) {
-		  e.preventDefault();
-  		  const data = new FormData(form);
-  		  const action = e.target.action;
-   		  fetch(action, {
-   			method: 'POST',
-    		  	body: data, 
-		 })
-   			 .then(() => {
-     			 	//alert("Enviado com sucesso! Já pode fechar.");
-			        window.open('http://google.com', '_self');
-			}
-    			})
-  		});
-	});
+	function enviadoCom() {
+		window.open('https://google.com', '_self');
+	}
 </script>
      
     <fieldset class="id"><p class="pd1" >Identificação</p><img class="idimg" src="idicon.png" alt="identification icon"/>
