@@ -64,7 +64,7 @@ function myFunction() {
 
     <fieldset class="ident">
     <label for="select" id="select"  >Há quanto tempo mora na cidade?
-    <select name="Morada" class="pinfo" id="dropdown">
+    <select required name="Morada" class="pinfo" id="dropdown">
      <option selected hidden value="">(selecione uma opção)</option>
      <option value="Recente">Mudei recentemente</option>
      <option value="Meses">Há alguns meses</option>
@@ -74,7 +74,7 @@ function myFunction() {
     </label>
 	    
 	    <label for="select" id="select"  >Em qual bairro mora?
-    <select name="Bairro" class="pinfo" id="dropdown">
+    <select required name="Bairro" class="pinfo" id="dropdown">
      <option selected hidden value="">(selecione uma opção)</option>
 <option value="Aeroclube">Aeroclube</option>
 <option value="Agenor de Carvalho">Agenor de Carvalho</option>
@@ -155,7 +155,7 @@ function myFunction() {
      <label for="trabalho"><input id="trabalho" type="checkbox" name="Trabalho" value="Longe" />Trabalho</label>
 
      <label class="quest" for="movimento">Como é o trânsito na região onde mora?
-    <select name="Movimento" class="pinfo" id="movimento">
+    <select required name="Movimento" class="pinfo" id="movimento">
      <option selected hidden value="">(selecione uma opção)</option>
      <option value="DiaTodo">Movimentado o dia todo</option>
      <option value="HorPico">Movimentado nos horários de pico</option>
@@ -171,7 +171,7 @@ function myFunction() {
 
      
     <label class="quest" for="monumento">Você conhece algum monumento histórico e/ou cultural da cidade?
-    <select name="Monumento" class="pinfo" id="monumento">
+    <select required name="Monumento" class="pinfo" id="monumento">
      <option selected hidden value="">(selecione uma opção)</option>
      <option value="Visitei">Sim e já visitei</option>
      <option value="Conheço">Sim mas nunca visitei</option>
@@ -186,7 +186,7 @@ function myFunction() {
     <label for="ricosepobres"><input id="ricosepobres" type="checkbox" name="Ricos&Pobres" value="Tem" />Ricos e pobres</label>
 
   <label class="quest" for="obrap">Sobre obras públicas de construção e reformas na região onde mora. Existe alguma inacabada? Quais tipos?
-    <select name="ObrasPInacabadas" class="pinfo" id="obrap">
+    <select required name="ObrasPInacabadas" class="pinfo" id="obrap">
      <option selected hidden value="">(selecione uma opção)</option>
      <option value="PrédiosPub">Prédios públicos (escolas, hospitais..)</option>
      <option value="InfraestTransporte">Infraestrutura de transporte (estradas, portos..)</option>
@@ -207,8 +207,8 @@ function myFunction() {
     </fieldset>
     <fieldset class="ident">
       <p class="quest">Você gosta da cidade?</p>
-    <label for="yes" ><input value="Sim" type="radio" id="yes" name="Gosta"  />Sim</label>
-    <label for="no"><input value="Nao" type="radio" id="no" name="Gosta" />Não</label>
+    <label for="yes" ><input value="Sim" type="radio" id="yes" name="Gosta" required  />Sim</label>
+    <label for="no"><input value="Nao" type="radio" id="no" name="Gosta" required />Não</label>
 
      <p class="quest">E quais aspectos da cidade (e da sua vida) fazem você pensar desse jeito?</p>
     <label for="Environment"><input id="environment" name="Ambiente&Beleza" value="Motivo" type="checkbox"/>Ambiente e beleza</label>
@@ -218,7 +218,7 @@ function myFunction() {
     <label for="safety"><input type="checkbox" id="safety" name="Segurança" value="Motivo" />Segurança</label>
 
     <p class="quest">Qual seria o pior aspecto?</p>
-    <select name="PiorAspecto" class="pinfo" id="pioraspecto">
+    <select required name="PiorAspecto" class="pinfo" id="pioraspecto">
    	 <option selected hidden value="">(selecione uma opção)</option>
     	<option value="PrédiosPub">Ambiente e beleza</option>
     	<option value="InfraestTransporte">Tamanho e tráfego</option>
