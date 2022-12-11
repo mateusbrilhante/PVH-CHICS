@@ -7,4 +7,4 @@ Elas envolvem compactação da cidade, mobilidade integrada, espaços de lazer, 
 
 A pesquisa pode ser acessada através do link: https://mateusbrilhante.github.io/PVH-CHICS/Pesquisa/.
 
-Qualquer crítica, dúvida ou sugestão serão bem vindas.
+Críticas, dúvidas e sugestões são bem vindas!
