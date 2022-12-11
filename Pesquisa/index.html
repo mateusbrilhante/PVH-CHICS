@@ -196,10 +196,10 @@ function myFunction() {
     </select>
 
     <p class="quest">Do seu ponto de vista, qual seria o tipo de obra mais urgente na sua região?</p>
-    <label for="PrédioPub" ><input value="PrédiosPub" type="radio" id="PrédioPub" name="ObraUrgente"  />Prédios públicos</label>
-    <label for="ServiçPub"><input value="ServiçoPub" type="radio" id="ServiçPub" name="ObraUrgente" />Serviços públicos</label>
-    <label for="InfraestTransport"><input value="InfraestTransporte" type="radio" id="InfraestTransport" name="ObraUrgente"  />Infraestrutura de transporte</label>
-    <label for="Outro"><input value="Outros" type="radio" id="Outro" name="ObraUrgente" />Outros</label>
+    <label for="PrédioPub" ><input required value="PrédiosPub" type="radio" id="PrédioPub" name="ObraUrgente"  />Prédios públicos</label>
+    <label for="ServiçPub"><input required value="ServiçoPub" type="radio" id="ServiçPub" name="ObraUrgente" />Serviços públicos</label>
+    <label for="InfraestTransport"><input required value="InfraestTransporte" type="radio" id="InfraestTransport" name="ObraUrgente"  />Infraestrutura de transporte</label>
+    <label for="Outro"><input required value="Outros" type="radio" id="Outro" name="ObraUrgente" />Outros</label>
 
     </fieldset>
 
@@ -231,11 +231,11 @@ function myFunction() {
     </fieldset>
     <p class="subtitle">Muito obrigado</p>
    
-    <input class="boton" type="submit" id="submit" value="Enviar" onclick="closeSurvey()"/>
+    <input class="boton" type="submit" id="submit" value="Enviar" onclick="closeWindow()"/>
 
 <script>
 
-function closeSurvey(){
+function closeWindow(){
 setTimeout("window.close()",6000)
 }
 	
