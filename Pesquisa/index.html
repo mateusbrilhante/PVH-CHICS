@@ -43,6 +43,7 @@ function myFunction() {
 		 })
    			 .then(() => {
      			 	alert("Enviado com sucesso! Já pode fechar.");
+			        window.close();
     			})
   		});
 	});
@@ -231,15 +232,9 @@ function myFunction() {
     </fieldset>
     <p class="subtitle">Muito obrigado</p>
    
-    <input class="boton" type="submit" id="submit" value="Enviar" onclick="closeWindow()"/>
+    <input class="boton" type="submit" id="submit" value="Enviar" />
 
-<script>
 
-function closeWindow(){
-setTimeout("window.close()",5000)
-}
-	
-</script>
     </form>
     </body>
     <footer class="subtitle"> 
